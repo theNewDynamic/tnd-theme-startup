@@ -4,14 +4,15 @@ The tND startup theme is an extensible starting place for a young company who ne
 
 
 
-theme has the following features:
+Theme has the following features:
 
 - Themable color set (from the main site?)
 - Announcement bar at the top of the site
 - Footer with menu and newsletter signup
-- Provision for privacy policy
+- Provision for privacy/cookie policy
 - Full site search
 - Fully functional asset pipleine folder to add features in the future, using Webpack
+- Comprehensive SEO, with page-by-page meta data overrides
 
 
 Blocks include:
@@ -20,3 +21,9 @@ Blocks include:
 - Feature set with images, copy
 - List of copy
 - Item boxes
+
+Page types may include:
+
+- about/founders
+- product
+- news/blog list + single pages
