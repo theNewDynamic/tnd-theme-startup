@@ -13,15 +13,16 @@
     {{ block "head_additions" .}}{{ end }}
   </head>
   <body class="{{ partial "_components/body-class" . }}">
-    {{ block "header" . }}{{ partial "_global/header.html" . }}{{ end }}
-    <div id="content" class="content">
-      <main role="main">
-        {{ block "hero" . }}{{ end }}
-        {{ block "main" . }}{{ end }}
-      </main>
-      {{ block "footer" . }}
-        {{- partial "_global/footer.html" . -}}
-      {{ end }}
-    </div>    
+    {{ block "header" . }}{{ partial "_global/header.html" . }}{{ end }}    
+    <main role="main">
+      {{ block "hero" . }}{{ end }}
+      <div id="content" class="content">
+      {{ block "main" . }}{{ end }}
+    </div>
+    </main>
+    {{ block "footer" . }}
+      {{- partial "_global/footer.html" . -}}
+    {{ end }}
+  
   </body>
 </html>

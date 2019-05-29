@@ -3,6 +3,7 @@
 The tND startup theme is an extensible starting place for a young company who needs a blank slate, but not a blank website. The theme has some standard elements, such as a standard navigation and footer, but doesn't dictate the structure of interior content. We accomplish this by using modular blocks that can easily be added or changed, depending on needs. 
 
 
+- [ ] use Netlify image service
 
 Theme has the following features:
 
@@ -13,6 +14,8 @@ Theme has the following features:
 - Full site search
 - Fully functional asset pipleine folder to add features in the future, using Webpack
 - Comprehensive SEO, with page-by-page meta data overrides
+
+
 
 
 Blocks include:

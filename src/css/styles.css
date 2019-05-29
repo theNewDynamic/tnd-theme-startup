@@ -1,0 +1,91 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+/* MODULES */
+@import "tailwindcss/modules/hugo-internal-templates";
+@import "tailwindcss/modules/typography";
+@import "tailwindcss/modules/utilities";
+
+@import "tailwindcss/utilities";
+
+body.kind-page #content {
+  @apply max-w-3xl mx-auto px-6;
+}
+
+body.kind-section #content {
+  @apply max-w-6xl mx-auto px-6;
+}
+@screen lg {
+  body.kind-section #content body.kind-page #content {
+    @apply px-0;
+  }
+}
+
+main {
+  @apply min-h-screen;
+}
+
+/* HEADER NAVIGATION */
+header {
+  @apply bg-white pt-6 px-6 border-b;
+}
+
+@screen lg {
+  header {
+    @apply sticky top-0 z-10;
+  }
+}
+
+header div {
+  @apply flex flex-wrap items-center justify-between max-w-6xl mx-auto py-4;
+}
+
+header .site-title {
+  @apply font-brand text-3xl text-primary-color-600 leading-tight;
+}
+
+nav[aria-label="main"] div {
+  @apply font-sans text-base flex flex-wrap items-center inline-block mr-8;
+}
+nav[aria-label="main"] .tnd-Nav__item a {
+  @apply text-primary-color-400;
+}
+
+nav[aria-label="main"] .tnd-Nav__item--active a,
+nav[aria-label="main"] .tnd-Nav__item a:hover {
+  @apply text-primary-color-700 border-b-2 border-primary-color-700;
+}
+
+
+/* FOOTER */
+nav[aria-label="footer"] {
+	@apply ml-8;
+}
+nav[aria-label="footer"], nav[aria-label="footer"] .tnd-Nav__item {
+	@apply inline-block px-4;
+}
+footer a:hover{
+	@apply text-black underline;
+}
+
+.footer-bottom {
+  @apply bg-gray-200 flex flex-wrap items-center font-sans justify-between py-4  px-4;
+}
+
+.footer-bottom a {
+  @apply text-gray-600 text-xs;
+}
+
+/* footer div a {
+  @apply text-gray-600 text-base;
+} */
+
+/* PAGE LEVEL  */
+.page-heading {
+  @apply font-serif font-normal text-5xl mt-16 mb-4 leading-tight;
+}
+.prose img,
+.prose iframe {
+  @apply max-w-full;
+}
