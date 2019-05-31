@@ -1,4 +1,6 @@
-
 {{ define "main" }}
-  Hello World
+  {{ range $section := .Params.sections }}
+    {{ $include_dict := dict "section" $section "Site" $.Site }}
+    {{ partial (printf "blocks/%s" $section.component) $include_dict }}
+  {{ end }}
 {{ end }}

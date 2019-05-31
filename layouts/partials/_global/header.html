@@ -1,8 +1,13 @@
 <header>
   <div>
     <a href="{{ .Site.Home.RelPermalink }}" class="site-title"> 
-      {{.Site.Title}}
-    </a>
-    {{- partial "_global/menu.html" (dict "page" . "menu" "main") -}}
-  </div>  
+      {{ with .Site.Params.logo }}
+        {{ $logo := resources.Get (string .) }}
+          <img src="{{$logo.Permalink}}" alt="{{ $.Site.Title }}" width="200">
+        {{ else }}            
+          {{.Site.Title}}      
+      {{ end }}    
+      </a>
+      {{- partial "_global/menu.html" (dict "page" . "menu" "main") -}}
+  </div>
 </header>

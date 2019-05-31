@@ -1,8 +1,6 @@
 {
   "main": {
-    "css": "/dist/main.7f938f86d862575415e7.css",
-    "cssIntegrity": "sha256-FwWN11q6NdXo5z2WEM7uEK5ZjpeKFTQDqMoThn4anLg=",
-    "js": "/dist/main.ba6b10f9ec2b00b2ccda.js",
-    "jsIntegrity": "sha256-1YiG8I3+JExausU+GEWXtRMx7l23xheBAzAmMOL95kY="
+    "css": "/dist/main.css",
+    "js": "/dist/main.js"
   }
 }

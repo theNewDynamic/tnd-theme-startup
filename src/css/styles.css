@@ -28,7 +28,10 @@ main {
 
 /* HEADER NAVIGATION */
 header {
-  @apply bg-white pt-6 px-6 border-b;
+  @apply bg-white px-6 border-b bg-gray-100;
+}
+header div {
+  @apply max-w-6xl mx-auto py-4 flex flex-wrap items-center justify-between;
 }
 
 @screen lg {
@@ -37,9 +40,6 @@ header {
   }
 }
 
-header div {
-  @apply flex flex-wrap items-center justify-between max-w-6xl mx-auto py-4;
-}
 
 header .site-title {
   @apply font-brand text-3xl text-primary-color-600 leading-tight;
@@ -64,6 +64,10 @@ nav[aria-label="footer"] {
 }
 nav[aria-label="footer"], nav[aria-label="footer"] .tnd-Nav__item {
 	@apply inline-block px-4;
+}
+
+footer {
+  @apply pt-16;
 }
 footer a:hover{
 	@apply text-black underline;

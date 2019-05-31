@@ -3,7 +3,9 @@
 The tND startup theme is an extensible starting place for a young company who needs a blank slate, but not a blank website. The theme has some standard elements, such as a standard navigation and footer, but doesn't dictate the structure of interior content. We accomplish this by using modular blocks that can easily be added or changed, depending on needs. 
 
 
-- [ ] use Netlify image service
+- [ ] use Netlify image service - - NO, maybe Hugo
+- [ ] Create Typography module
+
 
 Theme has the following features:
 
