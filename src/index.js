@@ -1,6 +1,6 @@
 // To use https://github.com/KyleAMathews/typefaces
 // example to add the typeflace "Play":
-// require("typeface-play")
+require("typeface-poppins")
 
 import "./css/styles.css";
 

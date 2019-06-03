@@ -1,7 +1,7 @@
 {{ define "main" }}
 
   {{- partial "_components/page-heading.html" . -}}
-  <section>    
+  <section class="md:grid md:grid-columns-2 lg:grid-columns-3 xl:grid-columns-2">    
     {{ range .Paginator.Pages }}
       {{- partial "summary.html" . -}}
     {{ end }}    

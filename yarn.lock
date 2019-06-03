@@ -4815,6 +4815,18 @@ svgo@^1.0.0:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
+tailwindcss-grid@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/tailwindcss-grid/-/tailwindcss-grid-1.2.1.tgz#44d6310f754078b1a49fa30d0a4dfd69d09a4413"
+  integrity sha512-H/IjlRgREBUbBz3hlC+inGX45S8qx3T6pIY3aa2MJuy85tiSUk5BsdJDmkoCNA3HWfIyL1+NFJSgKyv+ADOJFw==
+
+tailwindcss-typography@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/tailwindcss-typography/-/tailwindcss-typography-2.1.1.tgz#6641c320df5dc1f5dd6e56444b25d003be5e572e"
+  integrity sha512-MzJDHAtelxtdDRJ6kTmJKhwn+qbJ3qp8mxD1MG+8po+tr4kplXl1TK0HJhxzcT//muE1HAN/l3YQ6BTlL+Q68w==
+  dependencies:
+    lodash "^4.17.11"
+
 tailwindcss@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.0.2.tgz#1df9caf88e0b194a5debf3c3b3aa6b64ea92c9a8"
@@ -4956,6 +4968,11 @@ typeface-play@^0.0.54:
   version "0.0.54"
   resolved "https://registry.yarnpkg.com/typeface-play/-/typeface-play-0.0.54.tgz#20eac3f0358e4ce0f8bd108d854ca0e67688f95d"
   integrity sha512-Pz2OEYhAuva0RQzC7QEaafYQf0uIH/Mpbze9ZWpq0xM3sxGHzz2+WECLJYejJhXOFNxIiVUdJ4pv/r97qujHeA==
+
+typeface-poppins@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-poppins/-/typeface-poppins-0.0.72.tgz#3262d6533dea2e99a5cafb3be7d8fa876e105206"
+  integrity sha512-FgzdU4XfGYc4aTq6WZD9FC+le4Foz6cyzjdjDvVnQePTQSUD0dkrXiVaTK/cyNVXQrEl2ykV39PxeKeFqqkrTA==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"

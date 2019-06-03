@@ -1,8 +1,8 @@
-<section id="{{ .section.section_id }}" class="block cta-block bg-accent outer">
+<section id="{{ .section.section_id }}" class="block cta-block bg-primary-color-500 text-center text-gray-200 c-rich-text">
   <div class="inner-large">
     <div class="grid">
       <div class="cell block-content">
-        <h2 class="block-title">{{ .section.title }}</h2>
+        <h2 class="block-title font-brand">{{ .section.title }}</h2>
         {{ if .section.subtitle }}
         <p class="block-subtitle">
           {{ .section.subtitle | safeHTML }}

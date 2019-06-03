@@ -9,6 +9,9 @@
 
 @import "tailwindcss/utilities";
 
+body {
+  @apply font-sans text-gray-800;
+}
 body.kind-page #content {
   @apply max-w-3xl mx-auto px-6;
 }
@@ -23,16 +26,16 @@ body.kind-section #content {
 }
 
 main {
-  @apply min-h-screen;
+  @apply font-sans min-h-screen;
 }
 
 /* HEADER NAVIGATION */
 header {
-  @apply bg-white px-6 border-b bg-gray-100;
+  @apply bg-white px-6 border-b bg-gray-100 z-50;
 }
-header div {
-  @apply max-w-6xl mx-auto py-4 flex flex-wrap items-center justify-between;
-}
+/* header div {
+  @apply max-w-6xl mx-auto py-6 flex flex-wrap items-center justify-between;
+} */
 
 @screen lg {
   header {
@@ -46,7 +49,7 @@ header .site-title {
 }
 
 nav[aria-label="main"] div {
-  @apply font-sans text-base flex flex-wrap items-center inline-block mr-8;
+  @apply font-brand text-base flex flex-wrap items-center inline-block mr-8;
 }
 nav[aria-label="main"] .tnd-Nav__item a {
   @apply text-primary-color-400;
@@ -87,9 +90,32 @@ footer a:hover{
 
 /* PAGE LEVEL  */
 .page-heading {
-  @apply font-serif font-normal text-5xl mt-16 mb-4 leading-tight;
+  @apply font-brand font-bold text-primary-color-700 text-5xl mt-16 mb-4 leading-tight;
 }
 .prose img,
 .prose iframe {
   @apply max-w-full;
+}
+
+
+.test{
+  color: #E9F2F6;
+  color: #C8DEE7;
+  color: #A7CAD9;
+  color: #66A3BD;
+  color: #247BA0;
+  color: #206F90;
+  color: #164A60;
+  color: #103748;
+  color: #0B2530;
+  /* 2 */
+  color: #F0F7FA;
+  color: #D9EAF1;
+  color: #C2DEE9;
+  color: #94C5D9;
+  color: #66ACC8;
+  color: #5C9BB4;
+  color: #3D6778;
+  color: #2E4D5A;
+  color: #1F343C;
 }

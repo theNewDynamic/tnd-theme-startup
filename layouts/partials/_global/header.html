@@ -1,5 +1,5 @@
 <header>
-  <div>
+  <div class="max-w-6xl mx-auto py-6 flex flex-wrap items-center justify-between">
     <a href="{{ .Site.Home.RelPermalink }}" class="site-title"> 
       {{ with .Site.Params.logo }}
         {{ $logo := resources.Get (string .) }}
@@ -8,6 +8,9 @@
           {{.Site.Title}}      
       {{ end }}    
       </a>
-      {{- partial "_global/menu.html" (dict "page" . "menu" "main") -}}
+      <div class="flex flex-wrap items-center justify-between">
+        {{- partial "_global/menu.html" (dict "page" . "menu" "main") -}}
+        {{ partial "_components/social-follow.html" (dict "cx" . "icon_size" "24px") }} 
+      </div>
   </div>
 </header>

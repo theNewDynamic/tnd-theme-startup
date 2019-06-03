@@ -2,5 +2,47 @@
   "main": {
     "css": "/dist/main.css",
     "js": "/dist/main.js"
+  },
+  "": {
+    "woff": [
+      "/dist/Fonts/poppins-latin-100.woff",
+      "/dist/Fonts/poppins-latin-100italic.woff",
+      "/dist/Fonts/poppins-latin-200.woff",
+      "/dist/Fonts/poppins-latin-200italic.woff",
+      "/dist/Fonts/poppins-latin-300.woff",
+      "/dist/Fonts/poppins-latin-300italic.woff",
+      "/dist/Fonts/poppins-latin-400.woff",
+      "/dist/Fonts/poppins-latin-400italic.woff",
+      "/dist/Fonts/poppins-latin-500.woff",
+      "/dist/Fonts/poppins-latin-500italic.woff",
+      "/dist/Fonts/poppins-latin-600.woff",
+      "/dist/Fonts/poppins-latin-600italic.woff",
+      "/dist/Fonts/poppins-latin-700.woff",
+      "/dist/Fonts/poppins-latin-700italic.woff",
+      "/dist/Fonts/poppins-latin-800.woff",
+      "/dist/Fonts/poppins-latin-800italic.woff",
+      "/dist/Fonts/poppins-latin-900.woff",
+      "/dist/Fonts/poppins-latin-900italic.woff"
+    ],
+    "woff2": [
+      "/dist/Fonts/poppins-latin-100.woff2",
+      "/dist/Fonts/poppins-latin-100italic.woff2",
+      "/dist/Fonts/poppins-latin-200.woff2",
+      "/dist/Fonts/poppins-latin-200italic.woff2",
+      "/dist/Fonts/poppins-latin-300.woff2",
+      "/dist/Fonts/poppins-latin-300italic.woff2",
+      "/dist/Fonts/poppins-latin-400.woff2",
+      "/dist/Fonts/poppins-latin-400italic.woff2",
+      "/dist/Fonts/poppins-latin-500.woff2",
+      "/dist/Fonts/poppins-latin-500italic.woff2",
+      "/dist/Fonts/poppins-latin-600.woff2",
+      "/dist/Fonts/poppins-latin-600italic.woff2",
+      "/dist/Fonts/poppins-latin-700.woff2",
+      "/dist/Fonts/poppins-latin-700italic.woff2",
+      "/dist/Fonts/poppins-latin-800.woff2",
+      "/dist/Fonts/poppins-latin-800italic.woff2",
+      "/dist/Fonts/poppins-latin-900.woff2",
+      "/dist/Fonts/poppins-latin-900italic.woff2"
+    ]
   }
 }

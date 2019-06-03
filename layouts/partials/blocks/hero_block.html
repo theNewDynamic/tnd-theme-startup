@@ -1,24 +1,33 @@
-<section id="{{ .section.section_id }}" class="block hero-block bg-accent outer">
-  <div class="inner">
-    <div class="grid">
-      {{ if .section.image }}
-      <div class="cell block-preview">
-        <img src="{{ .section.image | relURL }}" alt="{{ .section.title }}" />
+{{ $section_title := .section.title  }}
+<section{{ with .section.section_id }} id="{{ . }}" {{end}}class="block hero-block bg-primary-color-800 text-center text-gray-100">
+  
+  <div class="max-w-6xl w-full mx-auto pt-16 pb-32">
+    <div class="flex items-center justify-center align-center">
+
+      {{ with .section.image }}
+      <div class="cell block-preview lg:order-1 w-full lg:w-1/2">
+        <img src="{{ . | relURL }}" alt="{{ $section_title }}" class="max-w-full"/>
       </div>
       {{ end }}
-      <div class="cell block-content">
-        <h2 class="block-title underline">{{ .section.title }}</h2>
-        <div class="block-copy">
+
+      <div class="w-full lg:w-1/2">
+        <h2 class="font-brand text-5xl leading-tight font-normal">{{ .section.title }}</h2>
+
+        <div class="block-copy text-gray-400">
           {{ partial "blocks/markdownify-block" .section.content }}
         </div>
+
         {{ if .section.actions }}
-        <p class="block-buttons">
-          {{ range $action := .section.actions }}
-          <a href="{{ $action.url | relURL }}" class="button white large">{{ $action.label }}</a>
-          {{ end }}
-        </p>
+          <p class="block-buttons mt-16 w-full">
+            {{ range $action := .section.actions }}
+            <a href="{{ $action.url | relURL }}" class="button bg-gray-200 hover:bg-gray-400 font-bold text-gray-800 rounded py-2 px-2">{{ $action.label }}</a>
+            {{ end }}
+          </p>
         {{ end }}
       </div>
+
     </div><!-- .grid -->
+
   </div><!-- .inner -->
+
 </section><!-- .block -->
