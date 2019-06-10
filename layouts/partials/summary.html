@@ -7,16 +7,16 @@
       {{ end }}    
     {{ end }}
   <div class="px-6 py-4">
-    <div class="font-bold text-xl mb-2 hover:underline"><a href="{{.Permalink}}">{{.Title}}</a></div>
+    <div class="font-headings font-bold text-xl mb-2 hover:underline"><a href="{{.Permalink}}">{{.Title}}</a></div>
     {{ with .Description }}
-        {{ . | markdownify }}
+        <p>{{ . | markdownify }}</p>
     {{ end }}
   </div>
   {{ with .Params.tags }}
     <div class="px-6 py-4">
       {{ range . }}{{ $name := . }}
         {{ with $.Site.GetPage (printf "/%s/%s" "tags" ($name | urlize)) }}
-          <a href="{{ .Permalink }}" class="inline-block hover:bg-gray-400 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#{{ $name }}</a>
+          <a href="{{ .Permalink }}" class="inline-block hover:bg-gray-400 bg-gray-200 rounded-full px-3 py-1 text-xs font-sans font-semibold text-gray-700 mr-2">{{ $name }}</a>
         {{ end }}
       {{ end }}
     </div>

@@ -1,0 +1,24 @@
+<form action="{{ with $.Site.Params.mailchimp }}{{.}}{{ end }} " method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate text-sm flex flex-col flex-row-l items-center" target="_blank" novalidate>
+    {{/* mb-8 md:mb-2 lg:mb-0 mr4 mt-8 sm:mt-0 pl-16 pr2 */}}
+      <label for="mce-EMAIL" class="screen-reader-text clip hide-until-focused">Email Address </label>
+    
+      <div class="sm:flex">
+    
+        <input type="email" value="" name="EMAIL" class="bg-white required border-r border-l border-t bw1-ns border-b b--inherit bg-transparent color-inherit email text-2xl font-brand mw-100 w-2/3 input-reset near-white px-4 py-2" id="mce-EMAIL" placeholder="Enter Your Email" style="">
+    
+        <button type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="border bl-0-ns bt-0 bw1-ns b--inherit bg-transparent color-inherit text-2xl font-brand hover:bg-white hover:text-black px-4 pointer text-center near-white" onClick="ga('send', 'event', { eventCategory: 'newsletter', eventAction: 'subscribe'});">Sign Up</button>
+    
+      </div>
+    
+      <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    
+      <div style="position: absolute; left: -5000px;">
+        <label for="mc3" class="hidden"></label>
+        <input id="mc3" type="text" name="b_0dc2a0f506c935993943cf0a9_b3baf6eece" tabindex="-1" value="">
+      </div>
+    
+    </form>
+    

@@ -22,7 +22,13 @@
       "/dist/Fonts/poppins-latin-800.woff",
       "/dist/Fonts/poppins-latin-800italic.woff",
       "/dist/Fonts/poppins-latin-900.woff",
-      "/dist/Fonts/poppins-latin-900italic.woff"
+      "/dist/Fonts/poppins-latin-900italic.woff",
+      "/dist/Fonts/roboto-condensed-latin-300.woff",
+      "/dist/Fonts/roboto-condensed-latin-300italic.woff",
+      "/dist/Fonts/roboto-condensed-latin-400.woff",
+      "/dist/Fonts/roboto-condensed-latin-400italic.woff",
+      "/dist/Fonts/roboto-condensed-latin-700.woff",
+      "/dist/Fonts/roboto-condensed-latin-700italic.woff"
     ],
     "woff2": [
       "/dist/Fonts/poppins-latin-100.woff2",
@@ -42,7 +48,13 @@
       "/dist/Fonts/poppins-latin-800.woff2",
       "/dist/Fonts/poppins-latin-800italic.woff2",
       "/dist/Fonts/poppins-latin-900.woff2",
-      "/dist/Fonts/poppins-latin-900italic.woff2"
+      "/dist/Fonts/poppins-latin-900italic.woff2",
+      "/dist/Fonts/roboto-condensed-latin-300.woff2",
+      "/dist/Fonts/roboto-condensed-latin-300italic.woff2",
+      "/dist/Fonts/roboto-condensed-latin-400.woff2",
+      "/dist/Fonts/roboto-condensed-latin-400italic.woff2",
+      "/dist/Fonts/roboto-condensed-latin-700.woff2",
+      "/dist/Fonts/roboto-condensed-latin-700italic.woff2"
     ]
   }
 }

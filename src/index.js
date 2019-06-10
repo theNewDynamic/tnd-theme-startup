@@ -1,6 +1,7 @@
 // To use https://github.com/KyleAMathews/typefaces
 // example to add the typeflace "Play":
 require("typeface-poppins")
+require("typeface-roboto-condensed")
 
 import "./css/styles.css";
 

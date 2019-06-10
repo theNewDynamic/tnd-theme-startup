@@ -1,37 +1,40 @@
-<section id="{{ .section.section_id }}" class="block bg-gray-100 py-16 text-center bg-{{ .section.bg }}">
-  <div class="max-w-4xl text-xl text-center mx-auto mb-32">
+<section id="{{ .section.section_id }}" class="block my-16 lines bg-gray-200 text-center bg-{{ .section.bg }}">
+  <div class="text-xl bg-white mx-auto mb-16">
+    <div class="max-w-4xl py-16 mx-auto">
     {{ with .section.title }}        
       <h2 class="block-title">{{ . }}</h2>
     {{ end }}
     {{ if .section.subtitle }}
-    <p class="font-brand text-primary-color-600 text-2xl">
+    <p class="font-sans text-talos-text-600 text-3xl">
       {{ .section.subtitle | safeHTML }}
     </p>
     {{ end }}
+  </div>
   </div><!-- .block-header -->
   {{ if .section.featureslist }}
-  <div class="inner max-w-5xl mx-auto">
-    {{ range $i, $feature := .section.featureslist }}
-    <div class="my-16">
-      <div class="flex items-center">
-        {{ if $feature.image }}
-        <div class="w-full w-3/5 {{ if eq (mod $i 2) 0 }}order-1{{ else }}order-0{{end }}">
-          <img src="{{ $feature.image | relURL }}" alt="{{ $feature.title }}" />
-        </div><!-- .block-preview -->
+  <div class="max-w-6xlF px-32 pt-16 pb-32 mx-auto">    
+    <div class="grid grid-columns-3 grid-gap-8">        
+      {{ range $i, $feature := .section.featureslist }}        
+        <div class="bg-white shadow-2xl px-6 pt-4 pb-8 ">            
+          <div class="flex flex-col justify-between items-center">
+              {{/*  {{ with .icon }}
+                <img src="{{ . }}" alt="icon" class="h-6">
+              {{ end }}  */}}
+
+              <h3 class="w-full text-4xl font-headings h-24 leading-tight text-primary-color-500">
+                {{ $feature.title }}
+              </h3>
+              <div class="block-copy text-left text-base text-gray-700 px-4">
+                {{ partial "blocks/markdownify-block" $feature.content }}
+              </div>
+              {{/*  {{ if $feature.actions }}
+                {{ $include_dict := dict "actions" $feature.actions }}
+                {{ partial "blocks/cta_buttons.html" $include_dict }}
+              {{ end }}  */}}
+            </div>            
+          </div><!-- .block-content -->        
         {{ end }}
-        <div class="cell bg-gray-30f0">
-          <h3 class="text-4xl font-brand">{{ $feature.title }}</h3>
-          <div class="block-copy">
-            {{ partial "blocks/markdownify-block" $feature.content }}
-          </div>
-          {{ if $feature.actions }}
-            {{ $include_dict := dict "actions" $feature.actions }}
-            {{ partial "blocks/cta_buttons.html" $include_dict }}
-          {{ end }}
-        </div><!-- .block-content -->
       </div><!-- .grid -->
-    </div><!-- .block-item -->
-    {{ end }}
-    </div><!-- .inner -->
+    </div><!-- .block-item -->     
   {{ end }}
 </section><!-- .block -->

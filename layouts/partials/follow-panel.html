@@ -1,0 +1,26 @@
+<div class="font-brand bg-logo-colors-3 fbg-primary-color-2-600 text-grey-light px-8 py-16 mt-16">
+  <div class="max-w-6xl mx-auto">
+    {{ with $.Site.Params.cta }}
+      <div class="font-headings max-w-6xl mx-auto color-inherit inline-block text-4xl sm:text-5xl text-talos-text-100 text-center">
+        {{ . }}
+      </div>
+    {{ end }}
+    <div class="py-16 h-full sm:flex">     
+      <div class="w-1/2 bg-red">
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+          <script>
+            hbspt.forms.create({
+          portalId: "5706104",
+          formId: "23f14085-c278-4526-b4cb-7089a1e0a7e3"
+          });
+          </script>
+      </div>
+      <div class="lg:flex items-center pb-16 pl-32"> 
+        <div class="color-inherit text-2xl text-grey-dark pb-2 lg:pb-0 lg:pr-8 mt-8 sm:mt-0">
+          Follow us
+        </div>
+        {{ partial "_components/social-follow.html" (dict "cx" . "icon_size" "64px") }}
+      </div>
+    </div>                  
+  </div>
+</div>

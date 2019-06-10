@@ -142,6 +142,17 @@ eval("// extracted by mini-css-extract-plugin\n    if(false) { var cssReload; }\
 
 /***/ }),
 
+/***/ "./node_modules/typeface-roboto-condensed/index.css":
+/*!**********************************************************!*\
+  !*** ./node_modules/typeface-roboto-condensed/index.css ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n    if(false) { var cssReload; }\n  \n\n//# sourceURL=webpack:///./node_modules/typeface-roboto-condensed/index.css?");
+
+/***/ }),
+
 /***/ "./src/css/styles.css":
 /*!****************************!*\
   !*** ./src/css/styles.css ***!
@@ -161,7 +172,7 @@ eval("// extracted by mini-css-extract-plugin\n    if(false) { var cssReload; }\
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/styles.css */ \"./src/css/styles.css\");\n/* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_styles_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_polyfills_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/polyfills.js */ \"./src/js/polyfills.js\");\n/* harmony import */ var _js_polyfills_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_polyfills_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _js_lazysizes_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/lazysizes.js */ \"./src/js/lazysizes.js\");\n/* harmony import */ var _js_lazysizes_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_lazysizes_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_quicklink_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/quicklink.js */ \"./src/js/quicklink.js\");\n/* harmony import */ var _js_nojs_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/nojs.js */ \"./src/js/nojs.js\");\n/* harmony import */ var _js_nojs_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_nojs_js__WEBPACK_IMPORTED_MODULE_4__);\n// To use https://github.com/KyleAMathews/typefaces\n// example to add the typeflace \"Play\":\n__webpack_require__(/*! typeface-poppins */ \"./node_modules/typeface-poppins/index.css\");\n\n\n //MUST GO AT TOP\n\n\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/styles.css */ \"./src/css/styles.css\");\n/* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_styles_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_polyfills_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/polyfills.js */ \"./src/js/polyfills.js\");\n/* harmony import */ var _js_polyfills_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_polyfills_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _js_lazysizes_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/lazysizes.js */ \"./src/js/lazysizes.js\");\n/* harmony import */ var _js_lazysizes_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_lazysizes_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_quicklink_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/quicklink.js */ \"./src/js/quicklink.js\");\n/* harmony import */ var _js_nojs_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/nojs.js */ \"./src/js/nojs.js\");\n/* harmony import */ var _js_nojs_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_nojs_js__WEBPACK_IMPORTED_MODULE_4__);\n// To use https://github.com/KyleAMathews/typefaces\n// example to add the typeflace \"Play\":\n__webpack_require__(/*! typeface-poppins */ \"./node_modules/typeface-poppins/index.css\");\n\n__webpack_require__(/*! typeface-roboto-condensed */ \"./node_modules/typeface-roboto-condensed/index.css\");\n\n\n //MUST GO AT TOP\n\n\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

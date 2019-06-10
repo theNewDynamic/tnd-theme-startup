@@ -1,9 +1,9 @@
 <article class="h-entry c-rich-text">
   {{- partial "_components/page-heading.html" . -}}
-  <section>  
-    {{ if .Date }}
+  {{ if .Date }}
       {{ partial "_components/time.html" (dict "context" . "show_time" false) }}
     {{ end }}
+  <section class="border-t pt-4">      
     {{partial "_components/image-article.html" .}}        
     {{ .Content }}
   </section>

@@ -1,9 +1,8 @@
 <header>
   <div class="max-w-6xl mx-auto py-6 flex flex-wrap items-center justify-between">
     <a href="{{ .Site.Home.RelPermalink }}" class="site-title"> 
-      {{ with .Site.Params.logo }}
-        {{ $logo := resources.Get (string .) }}
-          <img src="{{$logo.Permalink}}" alt="{{ $.Site.Title }}" width="200">
+      {{ with .Site.Params.logo }}        
+          <img src="{{ . }}" alt="{{ $.Site.Title }}" width="200">
         {{ else }}            
           {{.Site.Title}}      
       {{ end }}    

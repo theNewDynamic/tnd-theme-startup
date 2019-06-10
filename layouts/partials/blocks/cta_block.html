@@ -1,4 +1,25 @@
-<section id="{{ .section.section_id }}" class="block cta-block bg-primary-color-500 text-center text-gray-200 c-rich-text">
+<div id="{{ .section.section_id }}" class="bg-left font-brand bg-primary-color-300 text-grey-light mt-16 px-8 py-16 relative">
+  {{ with .section.title }}
+  <div class="font-headings max-w-6xl mx-auto color-inherit inline-block text-4xl sm:text-5xl text-center">
+    {{ . }}
+  </div>
+  {{ end }}
+  <div class="mx-auto py-16 h-full sm:flex items-center justify-around w-full lg:w-5/6"> 
+    {{ partial "forms/newsletter.html" . }}
+    <div class="lg:flex items-center"> 
+      <div class="color-inherit text-2xl text-grey-dark pb-2 lg:pb-0 lg:pr-8 mt-8 sm:mt-0">
+        Follow us
+      </div>
+      {{ partial "_components/social-follow.html" (dict "cx" . "icon_size" "44px") }}
+    </div>
+  </div>
+
+  <div class="hidden sm:block lg:absolute color-inherit pin-l mt-32 h-32 ml-16 pin-t opacity-25 fill-current">     
+    <img src="" class="text-grey">
+  </div>
+</div>
+
+{{/*  <section id="{{ .section.section_id }}" class="block cta-block bg-primary-color-500 text-center text-gray-200 c-rich-text">
   <div class="inner-large">
     <div class="grid">
       <div class="cell block-content">
@@ -18,4 +39,5 @@
       {{ end }}
     </div><!-- .grid -->
   </div><!-- .inner -->
-</section><!-- .hero -->
+</section><!-- .hero -->  */}}
+

@@ -4,16 +4,11 @@
   <div class="max-w-6xl w-full mx-auto pt-16 pb-32">
     <div class="flex items-center justify-center align-center">
 
-      {{ with .section.image }}
-      <div class="cell block-preview lg:order-1 w-full lg:w-1/2">
-        <img src="{{ . | relURL }}" alt="{{ $section_title }}" class="max-w-full"/>
-      </div>
-      {{ end }}
+      
+      <div class="w-full lg:w-5/6">
+        <h2 class="font-brand text-6xl leading-none font-normal">{{ .section.title }}</h2>
 
-      <div class="w-full lg:w-1/2">
-        <h2 class="font-brand text-5xl leading-tight font-normal">{{ .section.title }}</h2>
-
-        <div class="block-copy text-gray-400">
+        <div class="block-copy text-3xl text-gray-400">
           {{ partial "blocks/markdownify-block" .section.content }}
         </div>
 

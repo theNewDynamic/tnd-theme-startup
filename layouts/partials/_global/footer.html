@@ -1,21 +1,11 @@
 <footer role="contentinfo">  
-  <section class="footer-top bg-primary-color-300 flex flex-wrap items-center py-16">
-      
-    <input class="shadow appearance-none border rounded w-64 py-2 px-3 mx-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Your Email">
-      
-    {{ partial "_components/social-follow.html" (dict "cx" . "icon_size" "44px") }}
-    
-  </section>
-
-  <section class="footer-bottom">
-    <div>
-        <a class="inline-block no-underline color-inherit" href="{{ .Site.BaseURL }}" >
-            &copy; {{ now.Format "2006" }} {{ .Site.Title }}
-          </a>
-          {{- partial "_global/menu.html" (dict "page" . "menu" "footer") -}}
-    </div>
-    <a class="block no-underline color-inherit" href="https://thenewdynamic.com" >
-      site by the New Dynamic
+  <div>
+    <a class="inline-block no-underline color-inherit" href="{{ .Site.BaseURL }}" >
+        &copy; {{ now.Format "2006" }} {{ .Site.Title }}
     </a>
-</section>
+    {{- partial "_global/menu.html" (dict "page" . "menu" "footer") -}}
+  </div>  
+  <a class="block no-underline color-inherit" href="https://thenewdynamic.com" >
+    site by the New Dynamic
+  </a>
 </footer>
